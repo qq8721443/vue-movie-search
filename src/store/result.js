@@ -27,11 +27,9 @@ export default {
         },
         changeLoadingState(state) {
             state.isFirstLoading = !state.isFirstLoading;
-            console.log(state.isFirstLoading);
         },
         changeSecondLoadingState(state) {
             state.isSecondLoading = !state.isSecondLoading;
-            console.log(state.isSecondLoading);
         },
         setResponseState(state, nextState) {
             state.responseState = nextState;
