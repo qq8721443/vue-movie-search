@@ -31,9 +31,6 @@ export default {
     methods: {
         handleIntersect(entry) {
             if(entry.isIntersecting) {
-                console.log(this.$store.state.result.totalData);
-                console.log(this.$store.state.result.results);
-                console.log(this.$store.state.result.results.length);
                 if (this.$store.state.result.totalData > this.$store.state.result.results.length) {
                     this.$emit('trigger-intersected');
                 }

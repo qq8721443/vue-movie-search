@@ -97,7 +97,6 @@ export default {
         }
     },
     mounted() {
-        console.log(this.keyword);
         const cachedData = JSON.parse(localStorage.getItem('cached-data'));
         if (cachedData){
             this.$store.commit('result/addFirstData', cachedData)
